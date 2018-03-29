@@ -7,7 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 /*класс описывает страницу https://epam.github.io/JDI/contacts.html , только то что находится на этой странице, не включает в себя хедер, футор, блоки слева и справа*/
-//sfddsfsfdwerwer
 
 public class ContactFormPage {
     WebDriver driver;
