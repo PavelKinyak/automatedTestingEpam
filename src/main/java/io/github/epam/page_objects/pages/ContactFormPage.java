@@ -16,19 +16,29 @@ public class ContactFormPage {
 
     //описание элементов
     @FindBy(css = "div.main-content-hg form#contact-form input#Name")  //форма name
-    private WebElement Name;
+    private WebElement name;
 
-    @FindBy(css="div.main-content-hg form#contact-form input#LastName") //last name
-    private WebElement LastName;
+    @FindBy(css="div.main-content-hg form#contact-form input#LastName") // форма last name
+    private WebElement lastNameField;
 
-    @FindBy(css="div.main-content-hg form#contact-form input#Position")  //position
-    private WebElement Position;
-
-    @FindBy(css="div.main-content-hg form#contact-form input#Passport")  //checkbox passport
-    private WebElement Passport;
+    @FindBy(css="div.main-content-hg form#contact-form input#Position")  // форма position
+    private WebElement positionField;
 
     @FindBy(css="div.main-content-hg form#contact-form input#Passport")  //checkbox passport
-    private WebElement Passport;
+    private WebElement passportCheckbox;
+
+    @FindBy(css="div.main-content-hg form#contact-form input#Number")  // форма Number
+    private WebElement numberField;
+
+    @FindBy(css="div.main-content-hg form#contact-form input#Seria")  // форма Seria
+    private WebElement seriaField;
+
+    FindBy(css="div.main-content-hg form#contact-form input#gender")  // выпадающий список gender
+    private WebElement genderDropdown;
+
+    FindBy(css="div.main-content-hg form#contact-form input#religion")  // комбинированный список  gender
+    private WebElement genderReligion;
+
 
 
 
