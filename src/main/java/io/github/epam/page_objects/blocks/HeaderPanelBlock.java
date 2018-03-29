@@ -67,6 +67,9 @@ public class HeaderPanelBlock {
     @FindBy(css = "header ul.navbar-right div.dropdown-menu-login form#login-form input#Password") //поле пароля, доступно только неавторизованному пользователю
     private WebElement passwordField;
 
+    @FindBy(css = "header ul.navbar-right div.dropdown-menu-login form#login-form button.btn-login") //кнока Enter, доступно только неавторизованному пользователю
+    private WebElement enterButton;
+
 
     //действия с элементами на странице на уровке UI
 
