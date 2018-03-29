@@ -16,7 +16,15 @@ public class BisnessLogicHeaderPanelBlock extends HeaderPanelBlock{
         loginFieldSendKeys(login);
         passwordFieldSendKeys(password);
         enterButtonClick();
-        logoutButtonIsDisplayed();
+        Assert.assertTrue(logoutButtonIsDisplayed());
+    }
+
+    public void logoutUser(){ //выход пользователя из системы
+        if(!logoutButtonIsDisplayed()){ //проверяем что dropdown свёрнут, если нет то разворачиваем
+            loginDropdownClick();
+        }
+        logoutButtonClick();
+        Assert.assertFalse(logoutButtonIsDisplayed());
     }
 
 
