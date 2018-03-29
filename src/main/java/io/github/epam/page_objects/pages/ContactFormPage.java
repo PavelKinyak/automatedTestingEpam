@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 /*класс описывает страницу https://epam.github.io/JDI/contacts.html , только то что находится на этой странице, не включает в себя хедер, футор, блоки слева и справа*/
+//sfddsfsfdwerwer
 
 public class ContactFormPage {
     WebDriver driver;
@@ -15,8 +16,22 @@ public class ContactFormPage {
     }
 
     //описание элементов
-    @FindBy(css = "div.main-content-hg form#contact-form input#Name")
-    private WebElement nameField;
+    @FindBy(css = "div.main-content-hg form#contact-form input#Name")  //форма name
+    private WebElement Name;
+
+    @FindBy(css="div.main-content-hg form#contact-form input#LastName") //last name
+    private WebElement LastName;
+
+    @FindBy(css="div.main-content-hg form#contact-form input#Position")  //position
+    private WebElement Position;
+
+    @FindBy(css="div.main-content-hg form#contact-form input#Passport")  //checkbox passport
+    private WebElement Passport;
+
+    @FindBy(css="div.main-content-hg form#contact-form input#Passport")  //checkbox passport
+    private WebElement Passport;
+
+
 
 
     //действия с элементами на странице на уровке UI
