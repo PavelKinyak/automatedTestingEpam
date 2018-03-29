@@ -74,79 +74,83 @@ public class HeaderPanelBlock {
 
     //действия с элементами на странице на уровке UI
 
-    public void homeLinkClick(){
+    protected void homeLinkClick(){
         homeLink.click();
     }
 
-    public void contactFormLinkClick(){
+    protected void contactFormLinkClick(){
         contactFormLink.click();
     }
 
-    public void supportLinkClick(){
+    protected void supportLinkClick(){
         serviceDropDown.click();
         supportLink.click();
     }
 
-    public void datesLinkClick(){
+    protected void datesLinkClick(){
         serviceDropDown.click();
         supportLink.click();
     }
 
-    public void complexTableLinkClick(){
+    protected void complexTableLinkClick(){
         serviceDropDown.click();
         complexTableLink.click();
     }
 
-    public void simpleTableLinkClick(){
+    protected void simpleTableLinkClick(){
         serviceDropDown.click();
         simpleTableLink.click();
     }
 
-    public void userTableLinkClick(){
+    protected void userTableLinkClick(){
         serviceDropDown.click();
         userTableLink.click();
     }
 
-    public void tableWithPagesLinkClick(){
+    protected void tableWithPagesLinkClick(){
         serviceDropDown.click();
         tableWithPagesLink.click();
     }
 
-    public void differentElementsLinkClick(){
+    protected void differentElementsLinkClick(){
         serviceDropDown.click();
         differentElementsLink.click();
     }
 
-    public void MetalsAndColorsLinkClick(){
+    protected void MetalsAndColorsLinkClick(){
         metalsAndColorsLink.click();
     }
 
-    public void searchIconClick(){
+    protected void searchIconClick(){
         searchIcon.click();
     }
 
-    public void searchFieldSendKeys(String request){ //ввести в поле поиска запрос, доступно только после нажатия иконки лупы
+    protected void searchFieldSendKeys(String request){ //ввести в поле поиска запрос, доступно только после нажатия иконки лупы
         searchField.sendKeys(request);
     }
 
-    public void loginDropdownClick(){
+    protected void loginDropdownClick(){
         loginDropdown.click();
     }
 
-    public void loginFieldSendKeys(String login){ //заполнить поле логин, только для НЕавторизованного пользователя
+    protected void loginFieldSendKeys(String login){ //заполнить поле логин, только для НЕавторизованного пользователя
         loginField.sendKeys(login);
     }
 
-    public void passwordFieldSendKeys(String password){ //заполнить поле пароль, только для НЕавторизованного пользователя
+    protected void passwordFieldSendKeys(String password){ //заполнить поле пароль, только для НЕавторизованного пользователя
         passwordField.sendKeys(password);
     }
 
-    public void enterButtonClick(){ //нажать кнопку Enter, только для НЕавторизованного пользователя
+    protected void enterButtonClick(){ //нажать кнопку Enter, только для НЕавторизованного пользователя
         enterButton.click();
     }
 
-    public void logoutButtonClick(){ //нажать кнопку logout, только для авторизованного пользователя
+    protected void logoutButtonClick(){ //нажать кнопку logout, только для авторизованного пользователя
         logoutButton.click();
+    }
+
+    protected boolean logoutButtonIsDisplayed(){
+       return logoutButton.isDisplayed();
     }
 
 }
