@@ -19,6 +19,8 @@ public class ContactFormPage {
     private WebElement nameField;
 
 
+
+
     //действия с элементами на странице на уровке UI
     public void nameFieldSendKeys(String name){//ввод в форму имени
         nameField.sendKeys(name);
