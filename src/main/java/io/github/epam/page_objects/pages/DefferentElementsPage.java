@@ -30,19 +30,63 @@ public class DefferentElementsPage {
     @FindBy(css = "div.main-content div.checkbox-row label.label-radio:nth-child(1) input") // "радиокнопка" взаимоисключающих элементов выборки с названием Gold
     private WebElement goldRadio;
 
-    @FindBy(css = "div.main-content div.checkbox-row label.label-radio:nth-child(1) input") // "радиокнопка" взаимоисключающих элементов выборки с названием Silver
+    @FindBy(css = "div.main-content div.checkbox-row label.label-radio:nth-child(2) input") // "радиокнопка" взаимоисключающих элементов выборки с названием Silver
     private WebElement silverRadio;
 
-    @FindBy(css = "div.main-content div.checkbox-row label.label-radio:nth-child(1) input") // "радиокнопка" взаимоисключающих элементов выборки с названием Bronze
+    @FindBy(css = "div.main-content div.checkbox-row label.label-radio:nth-child(3) input") // "радиокнопка" взаимоисключающих элементов выборки с названием Bronze
     private WebElement bronzeRadio;
 
-    @FindBy(css = "div.main-content div.checkbox-row label.label-radio:nth-child(1) input") // "радиокнопка" взаимоисключающих элементов выборки с названием Selen
+    @FindBy(css = "div.main-content div.checkbox-row label.label-radio:nth-child(4) input") // "радиокнопка" взаимоисключающих элементов выборки с названием Selen
     private WebElement selenRadio;
 
-    @FindBy(css = "div.main-content div.checkbox-row label.uui-button:nth-child(1) input") // кнопка сброса результатов выборки пользователя "DEFAULT BUTTON"
+    @FindBy(css = "div.main-content button[name='Default Button']") // кнопка сброса результатов выборки пользователя "DEFAULT BUTTON"
+    private WebElement defaultButton;
 
-    @FindBy(css = "div.main-content div.checkbox-row label.uui-button:nth-child(2) input") // кнопка "BUTTON"
+    @FindBy(css = "div.main-content input[class=\"uui-button\"]") // кнопка сброса результатов выборки пользователя "BUTTON"
+    private WebElement button;
+
+    @FindBy(css = "div.main-content select[class=\"uui-form-element\"]") // строка состояния с вариантами выбора (Red, Green, Blue, Yellow)
+    private WebElement select;
+
+    //описание методов на уровне UI
+
+    protected void waterCheckBoxclick(){
+        waterCheckBox.click();}
+
+    protected void earthCheckBoxclick(){
+        earthCheckBox.click();}
+
+    protected void windCheckBoxclick(){
+        windCheckBox.click();}
+
+    protected void fireCheckBoxclick(){
+        fireCheckBox.click();}
+
+    protected void goldRadioclick(){
+        goldRadio.click();}
+
+    protected void silverRadioclick(){
+        silverRadio.click();}
+
+    protected void bronzeRadioclick(){
+        bronzeRadio.click();}
+
+    protected void selenRadioclick(){
+        selenRadio.click();}
+
+    protected void defaultButtonclick(){
+        defaultButton.click();}
+
+    protected void buttonclick(){
+        button.click();}
+
+    protected void selectclick(){
+        select.click();}
+
+
+
+    }
+
 
 
 }
-    
