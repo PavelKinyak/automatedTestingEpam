@@ -115,7 +115,7 @@ public class HeaderPanelBlock {
         tableWithPagesLink.click();
     }
 
-    protected void differentElementsLinkClick(){
+    public void differentElementsLinkClick(){
         serviceDropDown.click();
         differentElementsLink.click();
     }

@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 /*класс описывает страницу https://epam.github.io/JDI/different-elements.html , только то что находится на этой странице, не включает в себя хедер, футор, блоки слева и справа*/
 
@@ -39,9 +40,52 @@ public class DefferentElementsPage {
     @FindBy(css = "div.main-content div.checkbox-row label.label-radio:nth-child(1) input") // "радиокнопка" взаимоисключающих элементов выборки с названием Selen
     private WebElement selenRadio;
 
-    @FindBy(css = "div.main-content div.checkbox-row label.uui-button:nth-child(1) input") // кнопка сброса результатов выборки пользователя "DEFAULT BUTTON"
+    @FindBy(css = "div.main-content button[name='Default Button']") // кнопка сброса результатов выборки пользователя "DEFAULT BUTTON"
+    private WebElement defaultButton;
 
-    @FindBy(css = "div.main-content div.checkbox-row label.uui-button:nth-child(2) input") // кнопка "BUTTON"
+    @FindBy(css = "div.main-content input[class=\"uui-button\"]") // кнопка сброса результатов выборки пользователя "BUTTON"
+    private WebElement buttonButton;
+
+    @FindBy(css = "div.main-content select[class=\"uui-form-element\"]") // строка состояния с вариантами выбора (Red, Green, Blue, Yellow)
+    private WebElement selectColor;
+
+//описание методов на уровне UI
+
+    protected void waterCheckBoxclick(){
+        waterCheckBox.click();}
+
+    protected void earthCheckBoxclick(){
+        earthCheckBox.click();}
+
+    protected void windCheckBoxclick(){
+        windCheckBox.click();}
+
+    protected void fireCheckBoxclick(){
+        fireCheckBox.click();}
+
+    public void goldRadioclick(){
+        goldRadio.click();}
+
+    protected void silverRadioclick(){
+        silverRadio.click();}
+
+    protected void bronzeRadioclick(){
+        bronzeRadio.click();}
+
+    protected void selenRadioclick(){
+        selenRadio.click();}
+
+    protected void defaultButtonclick(){
+        defaultButton.click();}
+
+    protected void buttonButtonclick(){
+        buttonButton.click();}
+
+    public void setSelectColor(String value){
+        Select select = new Select(selectColor);
+        select.selectByVisibleText(value);
+    }
+
 
 
 }
