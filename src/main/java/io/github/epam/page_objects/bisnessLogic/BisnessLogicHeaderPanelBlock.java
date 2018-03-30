@@ -36,12 +36,24 @@ public class BisnessLogicHeaderPanelBlock extends HeaderPanelBlock{
         Assert.assertTrue(driver.getTitle().equals("Dates"));
         complexTableLinkClick();
         Assert.assertTrue(driver.getTitle().equals("Complex Table"));
+        simpleTableLinkClick();
+        Assert.assertTrue(driver.getTitle().equals("Simple Table"));
         userTableLinkClick();
         Assert.assertTrue(driver.getTitle().equals("User Table"));
         tableWithPagesLinkClick();
-        Assert.assertTrue(driver.getTitle().equals("Table with pages "));
+        Assert.assertTrue(driver.getTitle().equals("Table with pages"));
         differentElementsLinkClick();
-        Assert.assertTrue(driver.getTitle().equals("Different Element "));
+        Assert.assertTrue(driver.getTitle().equals("Different Element"));
+        metalsAndColorsLinkClick();
+        Assert.assertTrue(driver.getTitle().equals("Metal and Colors"));
+        homeLinkClick();
+        Assert.assertTrue(driver.getTitle().equals("Home Page"));
+    }
+
+    public void doSerch(String request){
+        searchIconClick();
+        searchFieldSendKeys(request);
+        searchIconClick();
     }
 
 

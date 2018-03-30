@@ -26,6 +26,7 @@ public class TestFurs extends BaseDriverClass {
     public void autorization(){
         bisnessLogicHeaderPanelBlock.loginUser("epam", "1234");
         //bisnessLogicHeaderPanelBlock.logoutUser();
-        bisnessLogicHeaderPanelBlock.checkAllPagesFromHeader();
+        //bisnessLogicHeaderPanelBlock.checkAllPagesFromHeader();
+        bisnessLogicHeaderPanelBlock.doSerch("support");
     }
 }

@@ -89,7 +89,7 @@ public class HeaderPanelBlock {
 
     protected void datesLinkClick(){
         serviceDropDown.click();
-        supportLink.click();
+        datesLink.click();
     }
 
     protected void complexTableLinkClick(){
@@ -117,7 +117,7 @@ public class HeaderPanelBlock {
         differentElementsLink.click();
     }
 
-    protected void MetalsAndColorsLinkClick(){
+    protected void metalsAndColorsLinkClick(){
         metalsAndColorsLink.click();
     }
 
