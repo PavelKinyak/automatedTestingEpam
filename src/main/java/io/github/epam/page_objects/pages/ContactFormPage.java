@@ -61,15 +61,15 @@ public class ContactFormPage {
 
 
 
-
-
-
-
-    )  // комбинированный список  Religion
-    private WebElement genderReligion;
-
-    //действия с элементами на странице на уровке UI
-    public void nameFieldSendKeys(String name){//ввод в форму имени
-        nameField.sendKeys(name);
-    }
+//
+//
+//
+//
+//    )  // комбинированный список  Religion
+//    private WebElement genderReligion;
+//
+//    //действия с элементами на странице на уровке UI
+//    public void nameFieldSendKeys(String name){//ввод в форму имени
+//        nameField.sendKeys(name);
+//    }
 }
