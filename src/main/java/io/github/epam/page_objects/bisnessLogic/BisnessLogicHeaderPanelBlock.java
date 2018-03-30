@@ -27,5 +27,22 @@ public class BisnessLogicHeaderPanelBlock extends HeaderPanelBlock{
         Assert.assertFalse(logoutButtonIsDisplayed());
     }
 
+    public void checkAllPagesFromHeader(){ //проверяем все страницы хедера на валидность
+        contactFormLinkClick();
+        Assert.assertTrue(driver.getTitle().equals("Contact Form"));
+        supportLinkClick();
+        Assert.assertTrue(driver.getTitle().equals("Support"));
+        datesLinkClick();
+        Assert.assertTrue(driver.getTitle().equals("Dates"));
+        complexTableLinkClick();
+        Assert.assertTrue(driver.getTitle().equals("Complex Table"));
+        userTableLinkClick();
+        Assert.assertTrue(driver.getTitle().equals("User Table"));
+        tableWithPagesLinkClick();
+        Assert.assertTrue(driver.getTitle().equals("Table with pages "));
+        differentElementsLinkClick();
+        Assert.assertTrue(driver.getTitle().equals("Different Element "));
+    }
+
 
 }

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 //класс описывает блок хедер
 
 public class HeaderPanelBlock {
-    WebDriver driver;
+    protected WebDriver driver;
     public HeaderPanelBlock(WebDriver driver){
         PageFactory.initElements(driver, this);
         this.driver = driver;
