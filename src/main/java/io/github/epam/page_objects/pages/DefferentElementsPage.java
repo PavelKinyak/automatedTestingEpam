@@ -39,9 +39,9 @@ public class DefferentElementsPage {
     @FindBy(css = "div.main-content div.checkbox-row label.label-radio:nth-child(1) input") // "радиокнопка" взаимоисключающих элементов выборки с названием Selen
     private WebElement selenRadio;
 
-    @FindBy(css = "div.main-content div.checkbox-row label.uui-button:nth-child(1) input") // кнопка сброса результатов выборки пользователя "DEFAULT BUTTON"
-
-    @FindBy(css = "div.main-content div.checkbox-row label.uui-button:nth-child(2) input") // кнопка "BUTTON"
+//    @FindBy(css = "div.main-content div.checkbox-row label.uui-button:nth-child(1) input"); // кнопка сброса результатов выборки пользователя "DEFAULT BUTTON"
+//
+//    @FindBy(css = "div.main-content div.checkbox-row label.uui-button:nth-child(2) input"); // кнопка "BUTTON"
 
 
 }
