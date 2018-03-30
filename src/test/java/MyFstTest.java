@@ -45,7 +45,7 @@ public class MyFstTest {
     @Test
     public void mySamTest() throws Exception {
 // comm
-
+// тест сборки
         driver.get("https://yandex.ru/");
     }
 
