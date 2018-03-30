@@ -53,6 +53,9 @@ public class HeaderPanelBlock {
     @FindBy(css = "header div.search>span.icon-search") //иконка лупы
     private WebElement searchIcon;
 
+    @FindBy(css = "header div.search>div.search-active>span.icon-search") //активная иконка лупы, появляется только если раскрыть поле поиска
+    private WebElement searchIconActive;
+
     @FindBy(css = "header div.search div.search-field input") //поле поиска, открывается по иконке лупы
     private WebElement searchField;
 
@@ -123,6 +126,10 @@ public class HeaderPanelBlock {
 
     protected void searchIconClick(){
         searchIcon.click();
+    }
+
+    protected void searchIconActiveClick(){
+        searchIconActive.click();
     }
 
     protected void searchFieldSendKeys(String request){ //ввести в поле поиска запрос, доступно только после нажатия иконки лупы

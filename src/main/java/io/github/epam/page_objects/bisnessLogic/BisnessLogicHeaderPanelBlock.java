@@ -53,7 +53,7 @@ public class BisnessLogicHeaderPanelBlock extends HeaderPanelBlock{
     public void doSerch(String request){
         searchIconClick();
         searchFieldSendKeys(request);
-        searchIconClick();
+        searchIconActiveClick();
     }
 
 
