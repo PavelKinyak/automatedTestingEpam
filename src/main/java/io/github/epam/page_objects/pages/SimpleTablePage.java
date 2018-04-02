@@ -11,5 +11,5 @@ public class SimpleTablePage {
         this.driver=driver;
     }
 
-    /*@FindBy*/
+    /*@FindBy*///
 }
