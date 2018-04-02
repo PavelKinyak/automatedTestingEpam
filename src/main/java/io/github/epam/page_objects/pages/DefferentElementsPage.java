@@ -15,7 +15,8 @@ public class DefferentElementsPage {
         this.driver = driver;
     }
 
-    //описание элементов
+    // Описание элементов:
+
     @FindBy(css = "div.main-content div.checkbox-row label.label-checkbox:nth-child(1) input") // "флажок" выборки с названием Water
     private WebElement waterCheckBox;
 
@@ -49,7 +50,7 @@ public class DefferentElementsPage {
     @FindBy(css = "div.main-content select[class=\"uui-form-element\"]") // строка состояния с вариантами выбора (Red, Green, Blue, Yellow)
     private WebElement selectColor;
 
-//описание методов на уровне UI
+    // Описание методов на уровне UI:
 
     protected void waterCheckBoxclick(){
         waterCheckBox.click();}
