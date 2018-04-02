@@ -43,16 +43,4 @@ public class BisnessLogicLeftPanel extends LeftPanel{
 }
 
 
-        }
-
-
-        }
-
-
-        }
-
-
-        }
-
-
-        }
+}
